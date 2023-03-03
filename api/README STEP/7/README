@@ -1,0 +1,25 @@
+# Node JS - Test Driven Development 
+
+This project is made for pedagogic purposes.
+
+# TODO
+
+1. Add the Booking class into your model
+Don't forget to import it into index.js !
+
+2. Create the bookingRepo into the repositories
+Don't forget to import it into index.js !
+
+3. Add bookings mocks to fit your tests
+
+4. Create the /booking CRUD
+TIPS :
+- Get inspired with the /books one
+- Use momentjs to manipulate the dates
+
+IMPORTANT : Règles métier à prendre en compte
+- L'identifiant, de type UUID, sera généré aléatoirement côté backend
+- Date de location / Date de retour (format anglais uniquement) : YYYY-MM-DD
+- Date location < Date retour
+- L'utilisateur doit être enregistré en BDD
+- Un livre / film peut être loué uniquement s'il ne l'est pas déjà
