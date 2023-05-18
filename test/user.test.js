@@ -27,7 +27,7 @@ describe('Users', function () {
       chai.expect(res.body).to.deep.equal({
         data: [
           {
-            idUser: '9782744005084',
+            idUser: '9782744005083',
             lastName: 'Neveu',
             firstName: 'Lucas',
             birthDate: '1997-02-28',
@@ -36,7 +36,7 @@ describe('Users', function () {
             email:'lucas.neveu@gmail.com'
           },
           {
-            idUser: '9782746035966',
+            idUser: '9782746035965',
             lastName: 'Cordier',
             firstName: 'Olivie-Élodie',
             birthDate: '1996-12-28',
@@ -72,12 +72,12 @@ describe('Users', function () {
   });
   it('GET /users/:id should return a success response with found user', function (done) {
     chai.request(api)
-    .get('/users/9782744005084')
+    .get('/users/9782744005083')
     .end((_, res) => {
       chai.expect(res.statusCode).to.equal(200);
       chai.expect(res.body).to.deep.equal({
         data: {
-          idUser: '9782744005084',
+          idUser: '9782744005083',
           lastName: 'Neveu',
           firstName: 'Lucas',
           birthDate: '1997-02-28',
@@ -102,7 +102,7 @@ describe('Users', function () {
   });
   it('PUT /users/:id should return a success response with found user', function (done) {
     const user = {
-      idUser: '9782744005084',
+      idUser: '9782744005083',
       lastName: 'Neveu',
       firstName: 'Lucas',
       birthDate: '1997-02-28',
@@ -111,13 +111,13 @@ describe('Users', function () {
       email: 'lucas.neveu@gmail.com'
     };
     chai.request(api)
-    .put('/users/9782744005084')
+    .put('/users/9782744005083')
     .send(user)
     .end((_, res) => {
       chai.expect(res.statusCode).to.equal(200);
       chai.expect(res.body).to.deep.equal({
         data: {
-          idUser: '9782744005084',
+          idUser: '9782744005083',
           lastName: 'Neveu',
           firstName: 'Lucas',
           birthDate: '1997-02-28',
@@ -153,13 +153,13 @@ describe('Users', function () {
 
   it('DELETE /users/:id should return a success response', function (done) {
     chai.request(api)
-    .delete('/users/9782746035966')
+    .delete('/users/9782746035965')
     .end((_, res) => {
       chai.expect(res.statusCode).to.equal(200);
       chai.expect(res.body).to.deep.equal({
         meta: {
           _deleted: {
-            idUser: '9782746035966',
+            idUser: '9782746035965',
             lastName: 'Cordier',
             firstName: 'Olivie-Élodie',
             birthDate: '1996-12-28',

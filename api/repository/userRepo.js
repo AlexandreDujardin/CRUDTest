@@ -1,7 +1,7 @@
 export default (User) => {
   const users = [
-    new User('9782744005084','Neveu' ,'Lucas' ,'1997-02-28','10 Passage du Havre 75009 Paris','0644629401','lucas.neveu@gmail.com'),
-    new User('9782746035966','Cordier','Olivie-Élodie','1996-12-28','14 Rue du Docteur Heulin 75017 Paris','0757130420','olivieelodie.cordier@gmail.com')
+    new User('9782744005083','Neveu' ,'Lucas' ,'1997-02-28','10 Passage du Havre 75009 Paris','0644629401','lucas.neveu@gmail.com'),
+    new User('9782746035965','Cordier','Olivie-Élodie','1996-12-28','14 Rue du Docteur Heulin 75017 Paris','0757130420','olivieelodie.cordier@gmail.com')
   ];
   
   const listUsers = () => {

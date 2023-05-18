@@ -12,7 +12,7 @@ export default class User {
    * @param {String} email     - Email
    */
   constructor(idUser, lastName, firstName, birthDate, address, phone, email) {
-    this.idUser        = idUser;
+    this.idUser    = idUser;
     this.lastName  = lastName;
     this.firstName = firstName;
     this.birthDate = birthDate;

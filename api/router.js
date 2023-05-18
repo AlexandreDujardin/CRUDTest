@@ -12,4 +12,11 @@ export default (controlers, app) => {
   app.get('/users/:id', controlers.userCtrl.getUser);
   app.put('/users/:id', controlers.userCtrl.updateUser);
   app.delete('/users/:id', controlers.userCtrl.deleteUser);
+
+
+  app.get('/bookings', controlers.bookingCtrl.listBookings);
+  app.post('/bookings', controlers.bookingCtrl.createBooking);
+  app.get('/bookings/:id', controlers.bookingCtrl.getBooking);
+  // app.put('/users/:id', controlers.userCtrl.updateUser);
+  // app.delete('/users/:id', controlers.userCtrl.deleteUser);
 }
